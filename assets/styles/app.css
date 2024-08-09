@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Roboto', open-sans;
+  font-family: "Roboto", open-sans;
 }
 
 body {
@@ -63,6 +63,10 @@ header {
   outline: none;
 }
 
+h1 {
+  margin: 0;
+}
+
 #calculator button:hover,
 #calculator button:active {
   background: #084f88;
@@ -76,4 +80,55 @@ header {
 #calc-actions {
   margin-top: 1rem;
   text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 35px;
+}
+
+.logo-txt {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 2rem;
+  margin-right: 3px;
+}
+
+.logo-txt h1,
+.logo-txt span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.logo-txt h1 {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.logo-txt span {
+  font-weight: lighter;
+  font-size: 0.85rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }

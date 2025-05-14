@@ -15,7 +15,7 @@ It is designed to reinforce the understanding of JavaScript functions by buildin
 - **Tools**: VS Code, Git, GitHub
 
 ## 🚀 Live Demo
-[Demo(https://flavia3107.github.io/calculator/)]
+[Demo](https://flavia3107.github.io/calculator/)
 
 ## 📚 Learning Goals
 - Practice writing and organizing JavaScript functions

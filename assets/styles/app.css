@@ -80,49 +80,6 @@ h1 {
   text-align: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-}
-
-.logo > img {
-  height: 35px;
-}
-
-.logo-txt {
-  padding-left: 7px;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  align-items: flex-start;
-}
-
-.logo-img {
-  width: 2rem;
-  margin-right: 3px;
-}
-
-.logo-txt h1,
-.logo-txt span {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  letter-spacing: 4px;
-  color: #232323;
-}
-
-.logo-txt h1 {
-  font-weight: bolder;
-  font-size: 1.1rem;
-  margin-top: 2px;
-}
-
-.logo-txt span {
-  font-weight: lighter;
-  font-size: 0.85rem;
-}
-
 .row {
   display: flex;
   align-items: center;
@@ -145,6 +102,8 @@ h2 {
   font-size: 1rem;
 }
 
-header {
-  padding: 0.7rem;
+a {
+  display: flex;
+  width: fit-content;
+  margin: 0.5rem;
 }

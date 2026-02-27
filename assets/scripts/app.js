@@ -32,22 +32,24 @@ function writeToLog(
 function calculate(operation) {
   const enteredNumber = getUserNumberInput();
   const initialResult = currentResult;
-  let operator;
-  if (operation === 'ADD') {
-    currentResult += enteredNumber;
-    operator = '+';
-  } else if (operation === 'SUBTRACT') {
-    currentResult -= enteredNumber;
-    operator = '-';
-  } else if (operation === 'MULTIPLY') {
-    currentResult *= enteredNumber;
-    operator = '*';
-  } else {
-    currentResult /= enteredNumber;
-    operator = '/';
+  if (!Number.isNaN(enteredNumber)) {
+    let operator;
+    if (operation === 'ADD') {
+      currentResult += enteredNumber;
+      operator = '+';
+    } else if (operation === 'SUBTRACT') {
+      currentResult -= enteredNumber;
+      operator = '-';
+    } else if (operation === 'MULTIPLY') {
+      currentResult *= enteredNumber;
+      operator = '*';
+    } else {
+      currentResult /= enteredNumber;
+      operator = '/';
+    }
+    createAndWriteOutput(operator, initialResult, enteredNumber);
+    writeToLog(operation, initialResult, enteredNumber, currentResult);
   }
-  createAndWriteOutput(operator, initialResult, enteredNumber);
-  writeToLog(operation, initialResult, enteredNumber, currentResult);
 }
 
 addBtn.addEventListener('click', calculate.bind(this, 'ADD'));
